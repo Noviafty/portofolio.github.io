@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Wel<span>come</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skill">Skill</a></li>
+            </ul>
+        </nav>
+        <div class="image">
+            <img src="saya.jpg" alt="My Image">
+        </div>
+        <div class="content">
+            <h4>Hello, My Name Is</h4>
+            <h1>Novia<span> Fitriyani</span></h1>
+            <h3>University Muhammadiyah Malang students</h3>
+            <a href="#about" class="button">
+                More About Me <i class="far fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-me">
+            <img src="aku.jpg" alt="About Me">
+            <div class="about-text">
+                <h2>About<span> Me</span></h2>
+                <p>I am a student at the University of Muhammadiyah Malang (UMM) 5th semester information engineering study program, I have an interest in the field of software engineering, I am motivated to pursue a career as a quality and innovative Software Developer</p>
+                <a href="#contact" class="buttonn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="skill">
+        <div class="title">
+            <h2>Ski<span>lls</span></h2>
+        </div>
+        <div class="skill-table">
+            <div class="category">
+                <img src="pemograman.png" alt="Programming Image">
+                <h3>Programming Language</h3>
+                <ul class="skills">
+                    <li>
+                        <span>Java</span>
+                        <span>95%</span>
+                    </li>
+                    <li>
+                        <span>Python</span>
+                        <span>85%</span>
+                    </li>
+                    <li>
+                        <span>C++</span>
+                        <span>80%</span>
+                    </li>
+                    <li>
+                        <span>C</span>
+                        <span>80%</span>
+                    </li>
+                    <li>
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <span>CSS</span>
+                        <span>85%</span>
+                    </li>
+                    <li>
+                        <span>Javascript</span>
+                        <span>80%</span>
+                    </li>
+                    <li>
+                        <span>React js</span>
+                        <span>85%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="category">
+                <img src="Office.jpg" alt="Microsoft Image">
+                <h3>Microsoft Office</h3>
+                <ul class="skills">
+                    <li>
+                        <span>Word</span>
+                        <span>100%</span>
+                    </li>
+                    <li>
+                        <span>Excel</span>
+                        <span>95%</span>
+                    </li>
+                    <li>
+                        <span>Powerpoint</span>
+                        <span>100%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="category">
+                <img src="database1.png" alt="Database Image">
+                <h3>Database and Computer Network Management</h3>
+                <ul class="skills">
+                    <li>
+                        <span>OracleSQL</span>
+                        <span>95%</span>
+                    </li>
+                    <li>
+                        <span>CiscoTracer</span>
+                        <span>95%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-me">
+        <div= class="contact-text">
+            <h2>Contact <span> Me</span></h2>
+            <div class="contact-info">
+                <div class="contact-box">
+                    <div class="contact">
+                        <h4>Address</h4>
+                        <p>Malang, Jawa Timur</p>
+                    </div>
+                    <div class="contact">
+                        <h4>Email</h4>
+                        <p>noviafty24@gmail.com</p>
+                    </div>
+                    <div class="contact">
+                        <h4>Hp</h4>
+                        <p>+62 877-58xx-xxxx</p>
+                    </div>
+                    <div class="contact">
+                        <h4>Telp.</h4>
+                        <p>(031) 70xxxxxx</p>
+                    </div>
+                </div> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31613.97268527213!2d112.57985543955076!3d-7.9215168999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7881f5405daac1%3A0xb39e4847109109e4!2sUniversity%20of%20Muhammadiyah%20Malang%20Campus%20III!5e0!3m2!1sen!2sid!4v1698997083878!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more sections for Contact and Services as needed -->
+
+    <button id="scrollToTop" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            var offset = window.pageYOffset;
+            document.querySelector('.home').style.backgroundPositionY = offset * 0.7 + "px";
+
+            var scrollToTopButton = document.getElementById('scrollToTop');
+            if (offset > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
